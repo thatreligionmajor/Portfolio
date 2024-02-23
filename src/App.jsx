@@ -7,19 +7,19 @@ import "./App.css";
 function App() {
   const projects = useRef([
     {
-      title: "Project 1",
-      description: "elevator pitch",
-      image: "https://placekitten.com/750",
+      title: "Quantum Eats",
+      description: "A molecular gastronomy restaurant website, built from scratch with HTML, CSS, PHP, and MySQL.",
+      image: "/src/assets/quantum-eats-desktop-homepage.png",
       url: null,
-      repo: "https://githubsamplelink.com",
+      repo: "https://github.com/thatreligionmajor/Quantum-Eats",
       ref: useRef(null),
     },
     {
-      title: "Project 2",
-      description: "elevator pitch",
+      title: "Worst Con Ever",
+      description: "An ironic and playful comic book convention app created from scratch, using back and front end technologies such as Python, Flask, SQL, JavaScript, React, and REST APIs.",
       image: "https://placekitten.com/750",
       url: null,
-      repo: "https://githubsamplelink.com",
+      repo: "https://github.com/thatreligionmajor/Worst-Convention-Ever",
       ref: useRef(null),
     }
   ]);

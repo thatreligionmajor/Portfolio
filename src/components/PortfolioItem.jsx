@@ -24,7 +24,7 @@ const PortfolioCard =
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title">{portfolioItem.title}</h5>
-                    <p class="card-text">{portfolioItem.description}</p>
+                    <p class="card-text text-start">{portfolioItem.description}</p>
                     <div class="d-flex flex-row gap-3 justify-content-start">
                         {portfolioItem.url ? (
                             <a class="btn btn-success bg-gradient" href={portfolioItem.url} target="_blank" rel="noopener noreferrer">
