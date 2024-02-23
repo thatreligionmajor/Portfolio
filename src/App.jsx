@@ -30,7 +30,8 @@ function App() {
   return (
     <>
     <div className="fluid-container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      {/* Navbar Section Starts Here */}
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" onClick={() => window.scroll(0,0)}>
             Theresa Barkasy
@@ -51,20 +52,20 @@ function App() {
           </div>
         </div>
       </nav>
-    <div className="container d-flex flex-column gap-3" style={{ paddingTop: "7.5rem" }}>
-      {projects.current.map((portfolioItem, index) => (
-        <PortfolioCard
-        maxWidth="100%"
-        portfolioItem={portfolioItem}
-        key={index}
-        ref={portfolioItem.ref}
-        />
-      ))}
+      {/* Project Section Starts Here */}
+      <div className="container d-flex flex-column gap-3" style={{ paddingTop: "7.5rem" }}>
+        {projects.current.map((portfolioItem, index) => (
+          <PortfolioCard
+          maxWidth="100%"
+          portfolioItem={portfolioItem}
+          key={index}
+          ref={portfolioItem.ref}
+          />
+        ))}
+      </div>
+      {/* Footer Section Starts Here */}
+      
     </div>
-    </div>
-    
-
-
     </>
   );
 }
