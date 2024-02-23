@@ -42,8 +42,8 @@ function App() {
             <ul class="navbar-nav">
              {projects.current.map((portfolioItem, index) => (
               <PortfolioButton 
-                title={portfolioItem.title}
                 onClick={() => handleClick(portfolioItem)}
+                title={portfolioItem.title}
                 key={index}
               />
              ))}
@@ -51,11 +51,11 @@ function App() {
           </div>
         </div>
       </nav>
-    <div className="container d-flex flex-column gap-3 pt-5">
+    <div className="container d-flex flex-column gap-3" style={{ paddingTop: "7.5rem" }}>
       {projects.current.map((portfolioItem, index) => (
         <PortfolioCard
         maxWidth="100%"
-        portfolioItem={portfolioItem.title}
+        portfolioItem={portfolioItem}
         key={index}
         ref={portfolioItem.ref}
         />
