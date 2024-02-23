@@ -32,7 +32,7 @@ function App() {
     <>
     <div className="fluid-container">
       {/* Navbar Section Starts Here */}
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top fade-down">
         <div class="container-fluid">
           <a class="navbar-brand" onClick={() => window.scroll(0,0)}>
             Theresa Barkasy
