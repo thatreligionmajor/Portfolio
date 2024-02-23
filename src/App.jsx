@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { PortfolioButton, PortfolioCard } from "./components/PortfolioItem";
+import { PortfolioSection } from "./components/ProfileSection";
 import "./App.css";
 
 
@@ -52,6 +53,8 @@ function App() {
           </div>
         </div>
       </nav>
+      {/* Profile Section Starts Here */}
+      <PortfolioSection />
       {/* Project Section Starts Here */}
       <div className="container d-flex flex-column gap-3" style={{ paddingTop: "7.5rem" }}>
         {projects.current.map((portfolioItem, index) => (
