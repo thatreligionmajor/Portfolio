@@ -10,33 +10,48 @@ const PortfolioButton = ({ title, onClick }) => {
     )
 }
 
-const PortfolioCard = ({ portfolioItem }) => {
+const PortfolioCard = 
+    forwardRef(function project(
+        { portfolioItem, maxWidth="540px" },
+        ref
+    ) {
     return (
-    <div class="card mb-3" style={{maxWidth:"540px"}}>
+    <div ref={ref} class="card mb-3" style={{maxWidth: maxWidth}}>
         <div class="row g-0">
             <div class="col-md-4">
-            <img src={portfolioItem.image} class="img-fluid rounded-start" alt="..." />
+            <img src={portfolioItem.image} class="img-fluid rounded-start" alt={portfolioItem.title} />
             </div>
             <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">{portfolioItem.title}</h5>
-                <p class="card-text">{portfolioItem.description}</p>
-                <p class="card-text">
-                    {portfolioItem.url ?
-                        <a class="" href={portfolioItem.url} target="_blank" rel="noopener noreferrer">See it in action</a>
-                    : ""    
-                    }
-                    {portfolioItem.repo ?
-                        <a class="" href={portfolioItem.repo} target="_blank" rel="noopener noreferrer">See the code</a>
-                    : ""
-                    }
-                </p>
-            </div>
+                <div class="card-body">
+                    <h5 class="card-title">{portfolioItem.title}</h5>
+                    <p class="card-text">{portfolioItem.description}</p>
+                    <div class="d-flex flex-row gap-3 justify-content-start">
+                        {portfolioItem.url ? (
+                            <a class="" href={portfolioItem.url} target="_blank" rel="noopener noreferrer">
+                                See it in action
+                            </a>
+                        )
+                        : 
+                        ( 
+                            "" 
+                        )    
+                        }
+                        {portfolioItem.repo ? (
+                            <a class="" href={portfolioItem.repo} target="_blank" rel="noopener noreferrer">See the code</a>
+                        )
+                        : 
+                        (
+                            ""
+                        ) 
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    )
-}
+    );
+});
+
 export {
     PortfolioButton,
     PortfolioCard

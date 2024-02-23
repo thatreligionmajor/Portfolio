@@ -1,1 +1,4 @@
-#Portfolio with React
+# Portfolio with React
+
+### To Run
+npm run dev
