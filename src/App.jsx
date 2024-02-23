@@ -4,7 +4,7 @@ import "./App.css";
 
 
 function App() {
-  const projects = [
+  const projects = useRef([
     {
       title: "Project 1",
       description: "elevator pitch",
@@ -21,10 +21,10 @@ function App() {
       repo: "https://githubsamplelink.com",
       ref: useRef(null),
     }
-  ]
+  ]);
 
-  const handleClick = (item) => {
-    item.ref.current.scrollIntoView();
+  const handleClick = (portfolioItem) => {
+    portfolioItem.ref.current.scrollIntoView();
   }
 
   return (
@@ -40,10 +40,10 @@ function App() {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
-             {projects.current.map((item, index) => (
+             {projects.current.map((portfolioItem, index) => (
               <PortfolioButton 
-                title={item.title}
-                onClick={() => handleClick(item)}
+                title={portfolioItem.title}
+                onClick={() => handleClick(portfolioItem)}
                 key={index}
               />
              ))}
@@ -52,12 +52,12 @@ function App() {
         </div>
       </nav>
     <div className="container d-flex flex-column gap-3 pt-5">
-      {projects.map((item, index) => (
+      {projects.current.map((portfolioItem, index) => (
         <PortfolioCard
         maxWidth="100%"
-        item={item.title}
+        portfolioItem={portfolioItem.title}
         key={index}
-        ref={item.ref}
+        ref={portfolioItem.ref}
         />
       ))}
     </div>
