@@ -54,7 +54,9 @@ function App() {
         </div>
       </nav>
       {/* Profile Section Starts Here */}
-      <PortfolioSection />
+      <div style={{ paddingTop: "7.5rem" }}>
+        <PortfolioSection />
+      </div>
       {/* Project Section Starts Here */}
       <div className="container d-flex flex-column gap-3" style={{ paddingTop: "7.5rem" }}>
         {projects.current.map((portfolioItem, index) => (
