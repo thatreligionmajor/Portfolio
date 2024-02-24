@@ -19,7 +19,7 @@ const PortfolioCard =
     <div ref={ref} class="card mb-3 border-dark" style={{maxWidth: maxWidth}}>
         <div class="row g-0">
             <div class="col-md-4">
-            <img src={portfolioItem.image} class="img-fluid rounded-start cover" alt={portfolioItem.title} />
+            <img src={portfolioItem.image} class="img-fluid rounded-start object-fit-cover" alt={portfolioItem.title} />
             </div>
             <div class="col-md-8">
                 <div class="card-body">
