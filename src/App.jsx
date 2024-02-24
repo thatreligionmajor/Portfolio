@@ -17,7 +17,7 @@ function App() {
     {
       title: "Worst Con Ever",
       description: "An ironic and playful comic book convention app created from scratch, using back and front end technologies such as Python, Flask, SQL, JavaScript, React, and REST APIs.",
-      image: "https://placekitten.com/750",
+      image: "/src/assets/worst-con-ever.png",
       url: null,
       repo: "https://github.com/thatreligionmajor/Worst-Convention-Ever",
       ref: useRef(null),
