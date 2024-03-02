@@ -8,7 +8,15 @@ function App() {
   const projects = useRef([
     {
       title: "Quantum Eats",
-      description: "A molecular gastronomy restaurant website, built from scratch with HTML, CSS, PHP, and MySQL.",
+      description: 
+        (
+          <>
+            A molecular gastronomy restaurant website, built from scratch with
+            HTML, CSS, PHP, and MySQL.
+            <br />
+            Features:
+          </>
+        ),
       image: "/src/assets/quantum-eats-desktop-homepage.png",
       url: null,
       repo: "https://github.com/thatreligionmajor/Quantum-Eats",
@@ -16,7 +24,14 @@ function App() {
     },
     {
       title: "Worst Con Ever",
-      description: "An ironic and playful comic book convention app created from scratch, using back and front end technologies such as Python, Flask, SQL, JavaScript, React, and REST APIs.",
+      description: 
+        (
+          <>
+          An ironic and playful comic book convention app created from scratch, using back and front end technologies such as Python, Flask, SQL, JavaScript, React, and REST APIs.
+          <br/>
+          Features:
+          </>
+        ),
       image: "/src/assets/worst-con-ever.png",
       url: null,
       repo: "https://github.com/thatreligionmajor/Worst-Convention-Ever",
