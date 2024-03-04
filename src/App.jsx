@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { PortfolioButton, PortfolioCard } from "./components/PortfolioItem";
 import { PortfolioSection } from "./components/ProfileSection";
+import { Footer } from "./components/Footer";
 import "./App.css";
 
 
@@ -114,7 +115,7 @@ function App() {
         ))}
       </div>
       {/* Footer Section Starts Here */}
-      
+      <Footer />
     </div>
     </>
   );
