@@ -38,7 +38,7 @@ function App() {
             Security Measures: Implement security measures to protect sensitive information and prevent unauthorized access to administrative features.
           </>
         ),
-      image: "/src/assets/quantum-eats-desktop-homepage.png",
+      image: "/assets/quantum-eats-desktop-homepage.png",
       url: null,
       repo: "https://github.com/thatreligionmajor/Quantum-Eats",
       ref: useRef(null),
@@ -62,7 +62,7 @@ function App() {
           Schedule and Agenda: Present a comprehensive schedule and agenda of events, including panels, workshops, screenings, and performances.
           </>
         ),
-      image: "/src/assets/worst-con-ever.png",
+      image: "/assets/worst-con-ever.png",
       url: null,
       repo: "https://github.com/thatreligionmajor/Worst-Convention-Ever",
       ref: useRef(null),

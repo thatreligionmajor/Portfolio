@@ -3,7 +3,7 @@ const PortfolioSection = () => {
     <div class="card mb-3 border-dark">
         <div class="row g-0 fade-up mx-5">
             <div class="col-md-4">
-                <img src="/src/assets/claymationprofile.jpeg" class="w-75 img-fluid rounded-start" alt="" />
+                <img src="/assets/claymationprofile.jpeg" class="w-75 img-fluid rounded-start" alt="" />
             </div>
             <div class="col-md-8">
                 <div class="card-body">
