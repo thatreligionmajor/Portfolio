@@ -14,7 +14,28 @@ function App() {
             A molecular gastronomy restaurant website, built from scratch with
             HTML, CSS, PHP, and MySQL.
             <br />
-            Features:
+            <br />
+            <h6>Features:</h6>
+            <br />
+            Interactive Menu: Explore a curated menu of molecular gastronomy dishes, each with detailed descriptions and images.
+            <br />
+            Order Placement: Easily navigate through the menu to select and place orders for your desired dishes.
+            <br />
+            Dynamic Navigation: Seamless navigation between different food items, categories, and sections of the website.
+            <br />
+            Admin Management: Add and delete admin users to manage website operations securely.
+            <br />
+            Order Management: View, manage, and track orders placed by customers in real time. Update order statuses to keep customers informed about their order progress.
+            <br />
+            Menu Management: Add, update, and delete menu items with ease, allowing for flexibility in showcasing culinary creations. Organize menu items into categories for better navigation and presentation.
+            <br />
+            Authentication: Secure login system for admin users to access backend functionalities and perform administrative tasks.
+            <br />
+            Data Persistence: Utilize databases to store and retrieve information about menu items, orders, and admin users for seamless data management.
+            <br />
+            User-Friendly Interface: Intuitive and responsive user interface design for both frontend and backend, ensuring a pleasant browsing and administrative experience.
+            <br />
+            Security Measures: Implement security measures to protect sensitive information and prevent unauthorized access to administrative features.
           </>
         ),
       image: "/src/assets/quantum-eats-desktop-homepage.png",
@@ -29,7 +50,16 @@ function App() {
           <>
           An ironic and playful comic book convention app created from scratch, using back and front end technologies such as Python, Flask, SQL, JavaScript, React, and REST APIs.
           <br/>
-          Features:
+          <br />
+          <h6>Features:</h6>
+          <br />
+          Event Information: Display detailed information about the event, including dates, location, and schedule.
+          <br />
+          Guests and Speakers: Showcase a list of special guests, speakers, and panelists attending the event. Preview their work on site.
+          <br />
+          Exhibitors and Vendors: Highlight exhibitors and vendors participating in the convention, along with their products and services.
+          <br />
+          Schedule and Agenda: Present a comprehensive schedule and agenda of events, including panels, workshops, screenings, and performances.
           </>
         ),
       image: "/src/assets/worst-con-ever.png",
