@@ -15,7 +15,7 @@ This project was built using these technologies:
 - Node.js
 - CSS3
 - VSCode
-<!-- - Vercel -->
+- Vercel
 
 ### To Run
 ```console
@@ -25,3 +25,6 @@ your@githubhandle ➜ /workspaces/your-repo-name (main):~$ npm run dev
 This project allowed me to learn how to use React's forwardRef hook for the first time, as well as how to create some beautiful fade-in animations.
 ### Special Thanks
 Thank you to Shane Bell, for inspiring me to get started on my own portfolio!
+
+<!-- npm run build
+npm run preview -->
